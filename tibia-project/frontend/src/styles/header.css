@@ -1,0 +1,20 @@
+/* footer styling */
+
+
+
+
+.navbarLinks {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  font-family: "Press Start 2P";
+  align-items: center;
+}
+
+.headerContainer {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

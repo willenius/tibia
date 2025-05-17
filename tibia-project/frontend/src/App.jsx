@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/homepage.css'
 import Footer from './components/footer'
 import Header from './components/header'
 function App() {
