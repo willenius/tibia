@@ -1,19 +1,21 @@
 import React from "react";
 import "../styles/header.css";
-import '../styles/homepage.css';
+import { Link } from "react-router-dom";
+import { FcDvdLogo } from "react-icons/fc";
+import tibiaLogo from '../assets/tibia.svg'
 
 function Header() {
   return (
     <>
       <header className="headerTop">
         <nav className="headerNav">
-          <div className="headerContainer">
             <ul className="navbarLinks">
-              <li><a href="#shows">Shows & Tickets </a></li>  {/* fixa länkar till biljetter */}
-              <li>tibia</li> {/* typ en placeholder atm, byt med något annat, kanske en "about us" */}
-              <li><a href="#media">  Media</a></li>   {/* fixa länkar sen till videos som blir en egen sida */}
+              <li><Link to ="/shows"> Shows & Tickets </Link></li>  {/* fixa länkar till biljetter */}
+              <li className="navbarLogo">
+                 <Link to="/"><img src={tibiaLogo} alt="logo of tibia" /></Link> </li> {/* just nu en linkto "hem", fundera på om det behövs */}
+              <li className="mediaLogo"> 
+                <Link to="/media"> <FcDvdLogo className="icon"/> Media </Link> </li>   {/* fixa länkar sen till videos som blir en egen sida */}
             </ul>
-          </div>
         </nav>
       </header>
     </>
