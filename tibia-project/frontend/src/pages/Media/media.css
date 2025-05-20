@@ -1,0 +1,24 @@
+.flexContainerMedia {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+.mediaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mediaGrid {
+    grid-template-columns: 1fr; /* En kolumn på smala skärmar */
+    grid-row-gap: 20px;
+  }
+  body {
+    background-color: red;
+
+  }
+}
