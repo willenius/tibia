@@ -7,10 +7,10 @@ function Footer() {
       <footer className="footerBtm"> {/* route här sen till alla länkar och sidan i sig */}
         <ul className="footerDiv">
           <li> <a href="https://linktr.ee/tibia4you"
-                target="_blank">
-            <p>Social links</p></a> </li>
-          <li><p>©2025   tibia4u. All rights reserved.</p> </li>
-          <li><p>Terms & Conditions</p> </li>
+            target="_blank">
+            Social links</a> </li>
+          <li>©2025   tibia4u. All rights reserved. </li>
+          <li>Terms & Conditions </li>
         </ul>
       </footer>
     </>
