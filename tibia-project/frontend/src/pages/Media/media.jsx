@@ -7,6 +7,7 @@ function Media() {
       <div className="mediaGrid">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=5gKVq0bU9qE-U"
+          controls={true}
           volume={0.4}
         />
         <ReactPlayer
@@ -20,7 +21,7 @@ function Media() {
           url="https://youtu.be/OlnZ1JOZM9s?si=A0cHA5DML-LjPtKw-U"
          
         />
-        {/*  /* göra en egen sida som är som en video-player...   */}
+        {/*  /* göra en egen sida som är som en video-player, nu react-player så länge...   */}
       </div>
     </div>
   );
