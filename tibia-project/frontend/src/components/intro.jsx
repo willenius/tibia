@@ -8,7 +8,7 @@ function Intro({ onStart }) {
   return (
     <>
       <div className="introWrapper">
-        <Link to="/" onStart={onStart}>
+        <Link to="/" onClick={onStart}>
           <motion.img
             src={tibiaLogo}
             alt="logo of tibia"
