@@ -15,9 +15,12 @@ function App() {
   const [showHomepage, setShowHomePage] = useState(false);
   let onShowHomePage = () => {
     if (showHomepage == false) {
-      setShowHomePage(true);
+      setShowHomePage(false);
+      setShowHomePage(true)
     }
   };
+
+  
 
   return (
     <>

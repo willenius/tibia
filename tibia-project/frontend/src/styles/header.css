@@ -1,3 +1,7 @@
+.headerTop{
+  border-bottom: 1px solid;
+}
+
 .navbarLinks {
   display: flex;
   justify-content: space-between;
