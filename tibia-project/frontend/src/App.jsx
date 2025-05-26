@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles/homepage.css";
 
@@ -13,18 +13,18 @@ import Home from "./pages/home.jsx";
 
 function App() {
   const [showHomepage, setShowHomePage] = useState(false);
-  let onShowHomePage = () => {
-    if (showHomepage == false) {
+  useEffect(() => {   //hämtar in useStatet i useEffecten och sätter det som true, därefter så ska showHomepage köras.
+    const timerHomepage = setTimeout(() => {
       setShowHomePage(true);
-    }
-  };
+    }, 1500); // visa startsidan efter 1.5 sekunder
 
-  
+    return () => clearTimeout(timerHomepage); // rensa timern om komponenten avmonteras
+  }, []);
 
   return (
     <>
       <Router>
-        {!showHomepage && <Intro onStart={onShowHomePage} />}
+        {!showHomepage && <Intro />}
         {showHomepage && (
           <div className="appWrapper">
             <Header />

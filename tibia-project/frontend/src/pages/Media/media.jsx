@@ -1,15 +1,15 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
 import './/media.css';
+
+
 function Media() {
   return (
     <div className="flexContainerMedia">
       <div className="mediaGrid">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=5gKVq0bU9qE-U"
-          controls={true}
-          volume={0.4}
-        />
+        <video width="640" height="360" controls> 
+        <source src="/marys.mp4" type="video/mp4" /> 
+        </video>
         <ReactPlayer
           url="https://youtu.be/9ez0NA3GFxY?si=ATHRdsx65_Gs2eIs-U"
         />

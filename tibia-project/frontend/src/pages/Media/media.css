@@ -12,6 +12,13 @@
   grid-row-gap: 20px;
 }
 
+/* alternativ för lite snyggare src på iframen som jag tesade */
+/* }.mediaGrid iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+ */
 @media only screen and (max-width: 600px) {
   .mediaGrid {
     grid-template-columns: 1fr; /* En kolumn på smala skärmar */
@@ -19,6 +26,5 @@
   }
   body {
     background-color: red;
-
   }
 }
