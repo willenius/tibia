@@ -3,7 +3,7 @@ import "../styles/header.css";
 import { Link } from "react-router-dom";
 import { FcDvdLogo } from "react-icons/fc";
 import tibiaLogo from '../assets/tibia.svg'
-import { motion } from "framer-motion";
+/* import { motion } from "framer-motion"; */
 
 function Header() {
   return (<>

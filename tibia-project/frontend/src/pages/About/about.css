@@ -1,0 +1,35 @@
+.aboutContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.splitLeft {
+  flex: 1;
+  background-color: rgb(243, 223, 227);
+  background-size: cover;
+  padding: 20px;
+}
+
+.splitRight {
+  flex: 1;
+  background-color: rgb(218, 200, 200);
+  background-size: cover;
+  padding: 20px;
+}
+
+.btnAbout {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.btnAbout:hover {
+  background-color: white;
+  color: black;
+}
