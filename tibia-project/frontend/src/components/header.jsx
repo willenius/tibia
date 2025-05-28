@@ -12,7 +12,7 @@ function Header() {
             <ul className="navbarLinks">
               <li><Link to ="/shows"> Shows & Tickets </Link></li>  {/* fixa länkar till biljetter, api bandsintown */}
               <li className="navbarLogo">
-                 <Link to="/"><img src={tibiaLogo} alt="logo of tibia" /></Link> </li> {/* just nu en linkto "hem", fundera på om det behövs */}
+                 <Link to="/"><img src="/tibiagif.gif" alt="logo of tibia" /></Link> </li> {/* just nu en linkto "hem", fundera på om det behövs */}
               <li className="mediaLogo"> 
                 <Link to="/media"> <FcDvdLogo className="icon"/> Media </Link> </li>   {/* fixa länkar sen till videos som blir en egen sida */}
             </ul>

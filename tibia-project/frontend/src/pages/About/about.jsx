@@ -2,8 +2,8 @@ import "./about.css";
 import { useState } from "react";
 
 function About() {
-  const [showLeft, setShowLeft] = useState(false);
-  const [showRight, setShowRight] = useState(false);
+  const [hoverLeft, setHoverLeft] = useState(false);
+  const [hoverRight, setHoverRight] = useState(false);
 
   return (
     <>
@@ -12,20 +12,20 @@ function About() {
           <h1>Elias</h1>
           <p>
             Elias grew up in Stockholm on Södermalm etc etc etc.
-            {showLeft && " He loved music growing up..."}
+            {hoverLeft && " He loved music growing up..."}
           </p>
-          <button className="btnAbout" onClick={() => setShowLeft(!showLeft)}>
-            {showLeft ? "Read less" : "Read more"}
+          <button className="btnAbout" onMouseEnter={() => setHoverLeft(!hoverLeft)}>
+            {hoverLeft ? "Read less" : "Read more"}
           </button>
         </div>
         <div className="splitRight">
           <h1>Vide</h1>
           <p>
             Vide grew up in Uppsala etc etc etc...
-            {showRight && " He aspired to be a great guitar player..."}
+            {hoverRight && " He aspired to be a great guitar player..."}
           </p>
-          <button className="btnAbout" onClick={() => setShowRight(!showRight)}>
-            {showRight ? "Read less" : "Read more"}
+          <button className="btnAbout" onMouseEnter={() => setHoverRight(!hoverRight)}>
+            {hoverRight ? "Read less" : "Read more"}
           </button>
         </div>
       </div>
