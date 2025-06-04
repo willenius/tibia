@@ -19,7 +19,7 @@ function About() {
           </button>
         </div>
         <div className="splitRight">
-          <h1>Vide</h1>
+          <h1 className="text-red-500">Vide</h1>
           <p>
             Vide grew up in Uppsala etc etc etc...
             {hoverRight && " He aspired to be a great guitar player..."}

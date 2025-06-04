@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   background-color: rgb(255, 255, 255); /* sätt rgb(177, 135, 135) nattetid så det inte stör så mkt :o  */
   margin: 0;

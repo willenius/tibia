@@ -3,8 +3,17 @@ import { IoPlay } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import tibiaLogo from "../assets/tibia.svg";
+import { useEffect, useState } from "react";
+import * as React from "react";
 
 function Intro() {
+  const [progress, setProgress] = React.useState(13);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setProgress(66), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div className="introWrapper">
@@ -19,6 +28,7 @@ function Intro() {
               transition: { duration: 1 },
             }}
           />
+         
         </Link>
       </div>
     </>
