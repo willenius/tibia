@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import tibiaLogo from "../assets/tibia.svg";
 import { useEffect, useState } from "react";
 import * as React from "react";
+// import { Progress } from "@/components/ui/progress"; ((lista ut detta))
 
 function Intro() {
   const [progress, setProgress] = React.useState(13);
@@ -28,7 +29,7 @@ function Intro() {
               transition: { duration: 1 },
             }}
           />
-         
+          {/* <Progress value={progress} className="w-[60%]" /> lista ut*/}
         </Link>
       </div>
     </>
