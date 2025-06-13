@@ -4,7 +4,8 @@
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.10",
     "postcss": "^8.5.4",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
   },
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix server\""
